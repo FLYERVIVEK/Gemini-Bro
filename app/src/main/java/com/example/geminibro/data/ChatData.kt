@@ -1,18 +1,19 @@
 package com.example.geminibro.data
 import android.graphics.Bitmap
+import com.example.geminibro.BuildConfig
 import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.content
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 
+
 object ChatData {
 
-    val api_key = "AIzaSyBOa2yCCBjXD30Nn8XenSkF-JwWQeyRM9c"
-
+val apiKey = "Provide Your API Key"
     suspend fun getResponse(prompt: String): Chat {
         val generativeModel = GenerativeModel(
-            modelName = "gemini-pro", apiKey = api_key
+            modelName = "gemini-pro", apiKey = apiKey
         )
 
         try {
@@ -38,7 +39,7 @@ object ChatData {
 
     suspend fun getResponseWithImage(prompt: String, bitmap: Bitmap): Chat {
         val generativeModel = GenerativeModel(
-            modelName = "gemini-pro-vision", apiKey = api_key
+            modelName = "gemini-pro-vision", apiKey = apiKey
         )
 
         try {

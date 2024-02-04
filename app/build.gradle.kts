@@ -1,3 +1,7 @@
+import com.android.build.api.variant.BuildConfigField
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
+
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -7,6 +11,7 @@ android {
     namespace = "com.example.geminibro"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.geminibro"
         minSdk = 28
@@ -14,10 +19,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary = true
-        }
+
     }
 
     buildTypes {
@@ -38,6 +40,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
