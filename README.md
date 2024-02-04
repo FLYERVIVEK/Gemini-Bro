@@ -16,7 +16,7 @@ AI Chat with Image Vision: Engage in an intuitive chat experience with an AI ass
 🚀 Getting Started:
 
 
-Clone the repository: git clone https://github.com/your-username/gemini-bro.git
+Clone the repository: git clone https://github.com/FLYERVIVEK/Gemini-Bro.git
 Configure API keys: Obtain API keys from the Google Gemini platform and set them up in the app for secure communication.
 Build and run: Use Android Studio or your preferred IDE to build and run the app on your Android device or emulator.
 ⚠️ Note:
